@@ -50,12 +50,12 @@
 ## Text Guide
 
 1. Star (if you like)
-1. Clone the repo to local
+2. Clone the repo to local
    - Run `build.sh --help` to get the usage if you want to use CLI.
-1. Run `scripts/run.sh`
-1. Select the WSA version and its architecture (mostly x64)
-1. Select the version of Magisk
-1. Choose which brand of GApps you want to install
+3. Run `scripts/run.sh`
+4. Select the WSA version and its architecture (mostly x64)
+5. Select the version of Magisk
+6. Choose which brand of GApps you want to install
    - OpenGApps
 
         Select the [OpenGApps variant](https://github.com/opengapps/opengapps/wiki#variants) you like.
@@ -63,17 +63,17 @@
 
        There is no other variant we can choose.
 1. Select the root solution (none means no root)
-1. Wait for the script to complete and the artifact will be in the `output` folder
-1. Move the artifact to a place you like
-1. Double-click `Run.bat`
+2. Wait for the script to complete and the artifact will be in the `output` folder
+3. Move the artifact to a place you like
+4. Double-click `Run.bat`
     - If you previously have a MagiskOnWSA installation, it will automatically uninstall the previous one while **preserving all user data** and install the new one, so don't worry about your data.
     - If you have an official WSA installation, you should uninstall it first. (In case you want to preserve your data, you can backup `%LOCALAPPDATA%\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalCache\userdata.vhdx` before uninstallation and restore it after installation.) (If you want to restore the icons to the start menu, please install and use [WSAHelper](https://github.com/LSPosed/WSAHelper/releases/latest).)
     - If the popup windows disappear **without asking administrative permission** and WSA is not installed successfully, you should manually run `Install.ps1` as administrator:
-        1. Press `Win+x` and select `Windows Terminal (Admin)`
-        2. Input `cd "{X:\path\to\your\extracted\folder}"` and press `enter`, and remember to replace `{X:\path\to\your\extracted\folder}` including the `{}`, for example `cd "D:\wsa"`
-        3. Input `PowerShell.exe -ExecutionPolicy Bypass -File .\Install.ps1` and press `enter`
-        4. The script will run and WSA will be installed
-        5. If this workaround does not work, your PC is not supported for WSA
+        a. Press `Win+x` and select `Windows Terminal (Admin)`
+        b. Input `cd "{X:\path\to\your\extracted\folder}"` and press `enter`, and remember to replace `{X:\path\to\your\extracted\folder}` including the `{}`, for example `cd "D:\wsa"`
+        c. Input `PowerShell.exe -ExecutionPolicy Bypass -File .\Install.ps1` and press `enter`
+        d. The script will run and WSA will be installed
+        e. If this workaround does not work, your PC is not supported for WSA
 1. Magisk/Play store will be launched. Enjoy by installing LSPosed-zygisk with zygisk enabled or Riru and LSPosed-riru
 
 ## FAQ
